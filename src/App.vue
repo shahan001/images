@@ -1,13 +1,6 @@
 <template>
-
-
     
     <AppHeader></AppHeader>
-
-
-
-
-
 
 </template>
 
