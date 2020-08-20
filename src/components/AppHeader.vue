@@ -1,17 +1,17 @@
 <template>
 
     <div class="ui secondary pointing menu">
-        <a href="#" class="item">
-            Logo
-        </a>
+        <router-link to="/" class="item">
+            Image Storage
+        </router-link>
 
         {{isLoggedIn}}
 
         <div class="right menu">
             <div v-if="isLoggedIn" class="horizontal">
-                <a href="#" class="item">Galleris</a>
-                <a href="#" class="item">Upload</a>
-                <a href="#" class="item" @click="logout">Logout</a>
+                <router-link to="/" class="item">Galleris</router-link>
+                <router-link to="/upload" class="item">Upload</router-link>
+                <a to="" class="item" @click="logout">Logout</a>
             </div>
             <a v-else href="#" class="ui item" @click="login">Login</a>
         </div>
